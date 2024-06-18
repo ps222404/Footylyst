@@ -1,0 +1,124 @@
+.versus{
+   display: flex; 
+   flex-direction: column;
+}
+
+.opponent{
+    display: flex;
+    align-items: center;
+
+}
+.star{
+    margin-left: auto;
+
+}
+.star path {
+    stroke: #216E80; /* Initial color */
+    transition: stroke 0.5s; /* Smooth transition */
+}
+
+.star.clicked path {
+    stroke: #F1C40F; /* Clicked color */
+}
+
+.star.clicked:hover path {
+    stroke: #216E80; /* Hover color when clicked */
+}
+.star:hover path{
+    stroke:#F1C40F;
+}
+
+.Title{
+    display: none;
+}
+.date{
+    display: flex;
+    justify-content: space-around;
+    gap:2;
+    font-size: 16px;
+    
+}
+.match-date{
+    margin-top: 73px;
+    width: 100%;
+}
+.search-div {
+    width: 100%;
+    height: 95px;
+    border-bottom: 1px solid #646464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    position: relative;
+    width: 280px;
+    height: 50px;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    padding: 10px 40px 10px 10px; /* Padding to leave space for the icon */
+    border: 1px solid #646464;
+    border-radius: 5px;
+    background-color: #0C1A1E;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.input-container img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+
+.countrys{
+    width: 100%;
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    gap:4px;
+}
+.country{
+    background-color: #0F2126;
+    width: 280px;
+    height: 23px;
+    display: inline-flex;
+    gap:10px;
+    padding-left: 10px;
+    align-items: center;
+    border-radius: 5px;
+}
+.league{
+    width: 320px;
+    height: 720px;
+    border-radius: 5px;
+    border: 1px solid #646464;
+    margin-top: 98px;
+  }
+  
+
+@media only screen and (max-width: 1100px){
+    main{
+        display: list-item;
+    }
+    .date{
+        display: none;
+    }
+    .match-date{
+        margin-top: 0px;
+        width: 100%;
+    }
+    .Title{
+        display: block;
+        text-align: center;
+    }
+
+}

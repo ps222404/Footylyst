@@ -1,0 +1,45 @@
+.Title{
+    display: block;
+    text-align: center;
+}
+h1{
+    font-size: 32px;
+}
+.match-date{
+    margin-top: 25.5px;
+}
+.matches{
+    margin-top: 43px;
+}
+
+.events-title{
+    margin-top: 92px;
+}
+.news-name{
+    margin-top: 92px;
+}
+.star{
+    margin-left: auto;
+
+}
+.star path {
+    stroke: #F1C40F; /* Initial color */
+    transition: stroke 0.5s; /* Smooth transition */
+}
+
+.star.clicked path {
+    stroke: #216E80; /* Clicked color */
+}
+
+.star.clicked:hover path {
+    stroke: #F1C40F; /* Hover color when clicked */
+}
+.star:hover path{
+    stroke:#216E80;
+}
+
+@media only screen and (max-width: 1100px){
+    .matches{
+        margin-top: 20px;
+    }
+}

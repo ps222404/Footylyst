@@ -1,0 +1,13 @@
+.Title{
+    display: block;
+    text-align: center;
+}
+h1{
+    font-size: 32px;
+}
+.match-date{
+    margin-top: 25.5px;
+}
+.matches{
+    margin-top: 24px;
+}
