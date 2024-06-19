@@ -217,6 +217,9 @@ justify-content: center;
   padding-right: 20px;
 
 }
+.club{
+  width: 40px;
+}
 .league-name{
   font-size: 24px;
 }
@@ -306,6 +309,12 @@ footer{
   padding-left: 20px;
 
 }
+.active{
+  color: #216E80;
+}
+a:hover{
+  color: #216E80;
+}
 .footersection2{
   display: flex;
   flex-direction: column;
@@ -330,6 +339,9 @@ footer{
   .match{
     height: 15%;
     font-size: 24px;
+  }
+  .star{
+    width: 90px;
   }
   .club{
     width: 60px;
@@ -382,50 +394,28 @@ footer{
 }
 
 @media only screen and (max-width: 900px){
-  main{
-    min-height: 0;
-    height: fit-content;
+  .star{
+    width: 90px;
   }
-  .nav-links{
-      display: none;
+  .club{
+    width: 50px;
   }
-  header{
-   display: inline-flex;
-   height: 93px;
-   background-color: #0C1A1E;
-   border-bottom: 1px solid #216E80;
+  .match{
+    font-size: 16px;
   }
-  nav{
-    justify-content: center;
-    height: 93px;
-  }
-  footer{
-    display: none;
-  }
-  .content1, .content3{
-    display: none;
-  }
-  .matches{
-    border: none;
-    margin: auto;
 
-  }
-  .content2{
-    width: 100%;
-  }
-  .matches{
-    width: 82%;
-    height: 80vh;
-    margin-top: 20px;
-    justify-content: flex-start;
-  }
-  .nav-mobile{
-    display: inline-flex;
-    position: sticky;
-    background-color: #0C1A1E;
-    bottom: 0;
-    width: 100%;
 }
+@media only screen and (max-width: 600px){
+  .star{
+    width: 50px;
+  }
+  .club{
+    width: 40px;
+  }
+  .match{
+    font-size: 16px;
+  }
+
 }
 
 

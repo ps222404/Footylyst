@@ -21,9 +21,7 @@
   }
 
   
-.active{
-    color: #216E80;
-}
+
 .live-score{
     display: flex;
     width:60%;
@@ -68,9 +66,11 @@
     margin-top: 20px;
 }
 .competition{
-    width: 100%;
-    margin-left: 15.5%;
-    
+    width: 100%; 
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 .match-league{
     width: 77%;
@@ -83,10 +83,14 @@
     gap: 10px;
     align-items: center;
     font-size: 16px;
+    margin: 0 auto;
 }
 .comp{
     font-size: 14px;
+    width: 77%;
+    padding-right: 28px;
 }
+
 .match-name{
     font-size: 24px;
 }
@@ -108,36 +112,63 @@ table {
 }
 .line-up{
     height: 80%;
-    width: 80%;
+    width: 90%;
+}
+.live-score img{
+ height: 80px;
 }
 
 
 
 
-@media only screen and (max-width: 1100px){
+@media only screen and (max-width: 850px){
     .Tabs{
         font-size: 16px;
         width: 77%;
         display: flex;
         justify-content: space-around;
     }
+    .live-score img{
+        height: 50px;
+       }
+    .matches{
+        height: 80%;
+        padding-bottom: 10px;
+    }
+    .previous-match{
+        font-size: 16px;
+    }
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1100px){
     .Tabs{
         font-size: 20px;
         width: 77%;
         display: flex;
         justify-content: space-around;
     }
+    .live-score img{
+        height: 70px;
+    }
+    .live-score{
+        width: 77%;
+    }
+    .previous-match{
+        font-size: 16px;
+    }
+
 }
 @media only screen and (max-width: 450px){
     .previous-match{
-        font-size: 40%;
+        font-size: 10px;
     }
     .live-score{
         font-size: 20px;
     }
-    .previous-match img{
-        height: 50%;
+    .previous-img{
+        width: 11px;
     }
+    .live-score img{
+    height: 50px;
+   }
 }
+
