@@ -118,9 +118,6 @@ table {
  height: 80px;
 }
 
-
-
-
 @media only screen and (max-width: 850px){
     .Tabs{
         font-size: 16px;
